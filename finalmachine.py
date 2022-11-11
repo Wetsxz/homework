@@ -72,7 +72,7 @@ gbc_test_preds = model_train(gbc,"GradientBoostingClassifier",12)
 
 train = train[:50000]
 label = label[:50000]
-# 训练测试分离
+
 train_data = data[~data['label'].isna()]
 test_data = data[data['label'].isna()]
 
